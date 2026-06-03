@@ -151,7 +151,81 @@
     animation: fadeDown 1s 0.8s ease both;
     text-decoration: none;
   }
-  .scroll-btn-hover
+  .scroll-btn:hover {
+    background: var(--blue-mid);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(74,159,212,0.35)
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--blue-soft);
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    animation: fadeIn 2s 1.5s ease both;
+  }
+  .scroll-hint span { animation: bounce 1.5s infinite; display: block; }
+  @keyframes bounce { 0%, 100%{transform:translateY(0)} 50%{transform:translateY(5px)} }
+
+  /* — SECTIONS SHARED — */
+  .section-wrap {
+    padding: 5rem 1.5rem;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 0.63rem;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--blue-mid);
+    margin-bottom: 0.6rem;
+  }
+
+  .sectiom-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.7rem, 5vw, 2.6rem);
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+
+  /* — LETTER — */
+  .letter-card {
+    background: white;
+    border-radius: 18px;
+    padding: 2.8rem 2rem 2rem;
+    box-shadow: 0 4px 40px rgba(26,111,168,0.09);
+    position: relative;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.12rem;
+    line-height: 1.9;
+    color: #2a2a2a;
+    border-top: 4px solid var(--blue-soft);
+  }
+
+  .letter-card::before {
+    content: '\201C';
+    font-size: 7rem;
+    color: var(--blue-light);
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: -1.5rem;
+    left: 1.2rem;
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .
   
 
 
