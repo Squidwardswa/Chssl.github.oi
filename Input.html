@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 15th Birthday, Sophia!</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue-lightest: #eef6fd;
+    --blue-pale: #daeefa;
+    --blue-light: #b8ddf5;
+    --blue-soft: #7fbde0;
+    --blue-mid: #3b9cd9;
+    --blue-deep: #1a6fa8;
+    --blue-dark: #0d3d6b;
+    --blue-navy: #071e35;
+    --gold: #c9a84c;
+    --text-dark: #0a2540;
+    --text-mid: #2b5278;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--blue-lightest);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* — HERO — */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    background: radial-gradient(ellipse 90% 60% at 50% 0%, #9dfee 0%, #daeefa 50%, var(--blue-lightest) 80%;
+    overflow: hidden;
+  }
+
+  /* Cinnamon Roll SVG cutout */ 
+  .cinnamon-roll {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    width: 90px;
+    height: 90px;
+    filter: drop-shadow(0 4px 14px rgba(74,159,212,0.25));
+    animation: floatBob 3s ease-in-out infinite;
+    z-index: 10;
+  }
+  @keyframes floatBob {
+    0%,100% { transform: translateY(0) rotate(-3deg); }
+    50% { transformer: translatorY(-10px) rotate(3deg); }
+  }
+
+  .star {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+    animation: twinkle ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.5);}
+    50% { opacity: 0.7; transform: scale(1); }
+  }
+
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.6), rgba(74,159,212,0.12));
+    border: 1px solid rgba(255,225,255,0.5);
+    animation: floatUp linear infinite;
+    pointer-events: none;
+  }
+  @keyframes floatUp {
+    0%   { transform: translateY(110vh) scale(0.8); opacity: 0; }
+    10%  { opacity: 0.9; }
+    90%  { opacity: 0.4; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+  }
+
+  .hero-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--blue-mid);
+    margin-bottom: 1.5rem;
+    animation: fadeDown 1s ease both;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 11vw, 6rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.05;
+    animation: fadeDown 1s 0.2s ease both;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--blue-mid)
+  }
+
+  .hero-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(2rem, 7vw, 3.2rem);
+    margin-top: 0.4rem;
+    animation: fadeDown 1s 0.4s ease both;
+  }
+
+  .hero-divider {
+    width: 55px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--blue-mid), transparent);
+    margin: 1.6rem auto;
+    animation: fadeDown 1s 0.5s ease both;
+  }
+
+  .hero-date {
+    font-size: 0.82rem;
+    color: var(--text-mid);
+    letter-spacing: 0.06em;
+    animation: fadeDown 1s 0.6s ease both;
+  }
+
+  .scroll-btn {
+    margin-top: 2.5rem;
+    padding: 0.8rem 2.2rem;
+    border: 1.5px solid var(--blue-mid);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--blue-deep);
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+    animation: fadeDown 1s 0.8s ease both;
+    text-decoration: none;
+  }
+  .scroll-btn-hover
+  
+
+
+
+
+
+  
